@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - GramFin</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>🌱 GramFin</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h1>Welcome to Your Dashboard!</h1>
+    <p>Learn financial skills and improve your knowledge.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h2>🏦 Banking</h2>
+            <p>Learn banking basics.</p>
+            <a href="/banking">Start Learning</a>
+        </div>
+
+        <div class="card">
+            <h2>💰 Budgeting</h2>
+            <p>Manage your monthly budget.</p>
+            <a href="/budgeting">Start Learning</a>
+        </div>
+
+        <div class="card">
+            <h2>📱 Digital Payments</h2>
+            <p>Learn secure digital payments.</p>
+            <a href="/digital_payment">Explore</a>
+        </div>
+
+        <div class="card">
+            <h2>🔐 Fraud Awareness</h2>
+            <p>Understand online fraud.</p>
+            <a href="/fraud_awareness">Explore</a>
+        </div>
+
+        <div class="card">
+            <h2>🏛️ Government Schemes</h2>
+            <p>Discover useful schemes.</p>
+            <a href="/schemes">Explore</a>
+        </div>
+
+        <div class="card">
+            <h2>📝 Financial Quiz</h2>
+            <p>Test your knowledge.</p>
+            <a href="/quiz">Take Quiz</a>
+        </div>
+    </div>
+</section>
+<footer>GramFin | Learn and Grow</footer>
+</body>
+</html>
