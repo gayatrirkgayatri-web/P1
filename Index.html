@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>GramFin - Financial Literacy</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 GramFin</div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Learn Finance.<br>Build Your Future.</h1>
+        <p>
+            Welcome to GramFin! Learn banking, savings,
+            digital payments and financial safety
+            in simple language.
+        </p>
+        <a href="/register" class="btn">Get Started</a>
+    </div>
+    <div class="hero-image">💰</div>
+</section>
+
+<section class="features">
+    <h2>Explore Financial Learning</h2>
+    <p>Improve your financial knowledge step by step.</p>
+
+    <div class="card-container">
+
+        <div class="card">
+            <div class="emoji">🏦</div>
+            <h3>Banking Awareness</h3>
+            <p>Learn about bank accounts, ATM and loans.</p>
+            <a href="/banking">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💰</div>
+            <h3>Savings & Budgeting</h3>
+            <p>Learn to save money and manage expenses.</p>
+            <a href="/budgeting">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📱</div>
+            <h3>Digital Payments</h3>
+            <p>Understand UPI and online transactions.</p>
+            <a href="/digital_payment">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🔐</div>
+            <h3>Fraud Awareness</h3>
+            <p>Protect yourself from online fraud.</p>
+            <a href="/fraud_awareness">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏛️</div>
+            <h3>Government Schemes</h3>
+            <p>Discover useful government schemes.</p>
+            <a href="/schemes">Learn More →</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📝</div>
+            <h3>Financial Quiz</h3>
+            <p>Test your financial knowledge.</p>
+            <a href="/quiz">Start Quiz →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>About GramFin</h2>
+    <p>
+        GramFin aims to improve financial literacy
+        among rural households by providing simple,
+        accessible and practical financial education.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 GramFin | Financial Literacy Awareness</p>
+</footer>
+
+</body>
+</html>
