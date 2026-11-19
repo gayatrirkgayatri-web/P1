@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banking Awareness - GramFin</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>🌱 GramFin</h2>
+    <a href="/dashboard">Dashboard</a>
+</header>
+
+<section class="container">
+    <h1>🏦 Banking Awareness</h1>
+    <p>Learn the basics of banking.</p>
+
+    <div class="card">
+        <h2>1. What is a Bank?</h2>
+        <p>A bank is a financial institution that accepts deposits and provides loans.</p>
+    </div>
+
+    <div class="card">
+        <h2>2. Savings Account</h2>
+        <p>A savings account helps people deposit money and earn interest.</p>
+    </div>
+
+    <div class="card">
+        <h2>3. ATM</h2>
+        <p>An ATM allows customers to withdraw cash and perform other banking activities.</p>
+    </div>
+
+    <div class="card">
+        <h2>4. Loans</h2>
+        <p>A loan is money borrowed from a bank that must be repaid with applicable interest.</p>
+    </div>
+
+    <div class="card">
+        <h2>5. IFSC Code</h2>
+        <p>IFSC is an 11-character code used to identify a bank branch for electronic transfers.</p>
+    </div>
+
+    <a href="/dashboard" class="btn">Back to Dashboard</a>
+</section>
+</body>
+</html>
