@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - GramFin</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-container">
+    <h1>🌱 GramFin</h1>
+    <h2>Create Account</h2>
+
+    <form action="/register" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter email">
+
+        <label>Password</label>
+        <input type="password" name="password" minlength="8" placeholder="Create password" required>
+
+        <label>Select Language</label>
+        <select name="language" required>
+            <option value="English">English</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Gujarati">Gujarati</option>
+            <option value="Punjabi">Punjabi</option>
+            <option value="Odia">Odia</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already registered? <a href="/login">Login</a></p>
+</div>
+</body>
+</html>
