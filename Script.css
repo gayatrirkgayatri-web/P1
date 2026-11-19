@@ -1,0 +1,11 @@
+
+function showMessage(message) {
+    alert(message);
+}
+
+function calculateSavings(income, expenses) {
+    let savings = income - expenses;
+
+    document.getElementById("result").innerText =
+        "Your monthly savings: ₹" + savings;
+}
