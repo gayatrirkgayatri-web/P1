@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savings and Budgeting - GramFin</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>🌱 GramFin</h2>
+    <a href="/dashboard">Dashboard</a>
+</header>
+
+<section class="form-container">
+    <h1>💰 Savings & Budgeting</h1>
+
+    <h2>Monthly Budget Calculator</h2>
+
+    <label>Monthly Income (₹)</label>
+    <input type="number" id="income" placeholder="Enter monthly income" min="0">
+
+    <label>Monthly Expenses (₹)</label>
+    <input type="number" id="expenses" placeholder="Enter monthly expenses" min="0">
+
+    <button onclick="calculate()">Calculate Savings</button>
+
+    <h3 id="result"></h3>
+
+    <div class="card">
+        <h3>Saving Tips</h3>
+        <p>1. Save a fixed amount every month.</p>
+        <p>2. Avoid unnecessary expenses.</p>
+        <p>3. Maintain an emergency fund.</p>
+        <p>4. Plan your monthly budget.</p>
+    </div>
+</section>
+
+<script>
+function calculate() {
+    let income = Number(document.getElementById("income").value);
+    let expenses = Number(document.getElementById("expenses").value);
+
+    if (document.getElementById("income").value === "" ||
+        document.getElementById("expenses").value === "" ||
+        income < 0 || expenses < 0) {
+        alert("Please enter valid income and expenses.");
+        return;
+    }
+
+    let savings = income - expenses;
+
+    document.getElementById("result").innerHTML =
+        "Your Monthly Savings: ₹" + savings.toLocaleString("en-IN");
+
+    if (savings < 0) {
+        document.getElementById("result").innerHTML +=
+            "<br>Your expenses are higher than your income.";
+    }
+}
+</script>
+</body>
+</html>
