@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GramFin - Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h2>🌱 GramFin</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to GramFin</h1>
+    <h2>Learn Finance. Build Your Future.</h2>
+    <p>Learn banking, savings, digital payments and financial safety in your language.</p>
+    <a href="/register" class="btn">Get Started</a>
+</section>
+
+<section class="container">
+    <h2>Our Learning Modules</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🏦 Banking Awareness</h3>
+            <p>Understand bank accounts, ATM, loans and interest.</p>
+            <a href="/banking">Explore</a>
+        </div>
+        <div class="card">
+            <h3>💰 Savings & Budgeting</h3>
+            <p>Learn to save money and manage expenses.</p>
+            <a href="/budgeting">Explore</a>
+        </div>
+        <div class="card">
+            <h3>📱 Digital Payments</h3>
+            <p>Understand UPI and online transactions.</p>
+        </div>
+        <div class="card">
+            <h3>🔐 Fraud Awareness</h3>
+            <p>Stay safe from online financial fraud.</p>
+        </div>
+        <div class="card">
+            <h3>🏛️ Government Schemes</h3>
+            <p>Learn about government financial schemes.</p>
+        </div>
+        <div class="card">
+            <h3>📝 Financial Quiz</h3>
+            <p>Test your financial knowledge.</p>
+        </div>
+    </div>
+</section>
+
+<footer>© 2026 GramFin | Financial Literacy Awareness</footer>
+</body>
+</html>
